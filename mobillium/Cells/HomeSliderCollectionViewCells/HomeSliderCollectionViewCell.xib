@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeSliderCollectionViewCell" id="gTV-IL-0wX" customClass="HomeSliderCollectionViewCell" customModule="mobillium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-aw-9dg">
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="248"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lSP-aw-9dg" secondAttribute="height" multiplier="2:1" id="USp-Aw-LZM"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGh-iI-Hzr">
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="248"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merhaba" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ins-C4-o8Y">
+                        <rect key="frame" x="16" y="187" width="464" height="26"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mGh-iI-Hzr" firstAttribute="centerX" secondItem="lSP-aw-9dg" secondAttribute="centerX" id="0qi-SQ-pM5"/>
+                <constraint firstItem="lSP-aw-9dg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2iB-qr-G0x"/>
+                <constraint firstItem="lSP-aw-9dg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="30c-mo-V2b"/>
+                <constraint firstAttribute="bottom" secondItem="Ins-C4-o8Y" secondAttribute="bottom" constant="35" id="5Q4-7I-7yb"/>
+                <constraint firstItem="mGh-iI-Hzr" firstAttribute="centerY" secondItem="lSP-aw-9dg" secondAttribute="centerY" id="Fmf-cG-L0P"/>
+                <constraint firstItem="lSP-aw-9dg" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="TEI-Tk-Y4U"/>
+                <constraint firstItem="Ins-C4-o8Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="ad1-KB-q5z"/>
+                <constraint firstAttribute="height" secondItem="lSP-aw-9dg" secondAttribute="height" id="b2p-Z3-wm4"/>
+                <constraint firstAttribute="trailing" secondItem="Ins-C4-o8Y" secondAttribute="trailing" constant="16" id="fxt-tY-FEZ"/>
+                <constraint firstItem="mGh-iI-Hzr" firstAttribute="height" secondItem="lSP-aw-9dg" secondAttribute="height" id="h8f-TJ-FUo"/>
+                <constraint firstItem="mGh-iI-Hzr" firstAttribute="width" secondItem="lSP-aw-9dg" secondAttribute="width" id="yR9-8o-vVd"/>
+            </constraints>
+            <size key="customSize" width="496" height="248"/>
+            <connections>
+                <outlet property="gradientView" destination="mGh-iI-Hzr" id="98X-zm-OHc"/>
+                <outlet property="movieName" destination="Ins-C4-o8Y" id="bxk-cK-KF6"/>
+                <outlet property="sliderImage" destination="lSP-aw-9dg" id="nhX-VE-xvP"/>
+            </connections>
+            <point key="canvasLocation" x="450.72463768115944" y="169.41964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
